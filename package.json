@@ -1,0 +1,15 @@
+{
+  "name": "specifyapp",
+  "version": "1.0.0",
+  "description": "Test environment for Specify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@specifyapp/cli": "^1.2.0",
+    "dotenv": "^16.4.4"
+  }
+}
