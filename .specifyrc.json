@@ -1,0 +1,70 @@
+{
+  "version": "2",
+  "repository": "@frontifyapp/Fondue",
+  "rules": [
+    {
+      "name": "CSS Custom Properties",
+      "parsers": [
+        {
+          "name": "change-case",
+          "options": {
+            "change": "names",
+            "toCase": "kebabCase"
+          }
+        },
+        {
+          "name": "change-case",
+          "options": {
+            "change": "modes",
+            "toCase": "kebabCase"
+          }
+        },
+        {
+          "name": "convert-color",
+          "options": {
+            "toFormat": "hsl"
+          }
+        },
+        {
+          "name": "to-css-custom-properties",
+          "output": {
+            "type": "file",
+            "filePath": "tokens.css"
+          }
+        }
+      ]
+    },
+    {
+      "name": "SDTF",
+      "parsers": [
+        {
+          "name": "change-case",
+          "options": {
+            "change": "names",
+            "toCase": "kebabCase"
+          }
+        },
+        {
+          "name": "change-case",
+          "options": {
+            "change": "modes",
+            "toCase": "kebabCase"
+          }
+        },
+        {
+          "name": "convert-color",
+          "options": {
+            "toFormat": "hsl"
+          }
+        },
+        {
+          "name": "to-sdtf",
+          "output": {
+            "type": "file",
+            "filePath": "tokens.json"
+          }
+        }
+      ]
+    }
+  ]
+}
